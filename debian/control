@@ -1,0 +1,28 @@
+Source: node-stream-iterate
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: NIRMAL K V <nirmalkv@disroot.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-from2 <!nocheck>
+ , node-stream-shift <!nocheck>
+ , node-tape <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-stream-iterate
+Vcs-Git: https://salsa.debian.org/js-team/node-stream-iterate.git
+Homepage: https://github.com/mafintosh/stream-iterate
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-stream-iterate
+Architecture: all
+Depends: ${misc:Depends}
+ , node-stream-shift
+ , nodejs
+Description: Iterate through the values in a stream
+ stream-iterate module recursively iterate through each item in the stream.
+ stream is a user defined list of objects. This module can be used to implement
+ things like a streaming merge sort.
+ .
+ Node.js is an event-based server-side JavaScript engine.

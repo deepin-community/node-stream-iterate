@@ -1,0 +1,67 @@
+node-stream-iterate (1.2.0-6) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs auto test & install
+
+ -- Yadd <yadd@debian.org>  Tue, 02 Nov 2021 17:57:16 +0100
+
+node-stream-iterate (1.2.0-5) unstable; urgency=medium
+
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends: Drop versioned constraint on node-stream-shift.
+    + node-stream-iterate: Drop versioned constraint on node-stream-shift in
+      Depends.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sun, 29 Aug 2021 01:40:59 +0100
+
+node-stream-iterate (1.2.0-4) unstable; urgency=medium
+
+  * Team upload
+  * Remove readable-stream dependency in favour of native stream
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 13 Sep 2018 23:10:57 +0530
+
+node-stream-iterate (1.2.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Change DEB_BUILD_OPTIONS to DEB_BUILD_PROFILES for nocheck
+  * Bump Standards-Version to 4.2.1 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 13 Sep 2018 14:15:08 +0530
+
+node-stream-iterate (1.2.0-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Paolo Greppi ]
+  * Update Vcs fields for migration to https://salsa.debian.org/
+
+  [ Pirate Praveen ]
+  * Bump Standards-Version to 4.1.5 (no changes needed)
+  * Bump debhelper compatibility level to 11~ from 11
+  * Support nocheck build profile
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 13 Jul 2018 22:18:18 +0530
+
+node-stream-iterate (1.2.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #890709)
+
+ -- NIRMAL K V <nirmalkv@disroot.org>  Sat, 17 Feb 2018 22:36:57 +0530
